@@ -1,0 +1,15 @@
+{
+  "name": "proyectowebdaw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "purgecss --css css/custom.css --content index.html -o css/reducido.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
