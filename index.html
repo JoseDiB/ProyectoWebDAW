@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto DAW José Díaz Bourre</title>
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body class="container-fluid p-0 bg-body-secondary">
@@ -18,7 +19,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Menú</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pagina 1</a>
+                            <a class="nav-link" href="pag2.html">Pagina 1</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Pagina 2</a>
@@ -78,9 +79,8 @@
             </div>
             <aside class="rounded bg-light col-3 d-flex justify-content-center mt-4">
                 <div class="list-group mt-2 w-100">
-                    <a href="#articulos" class="list-group-item list-group-item-action list-group-item-info">Primera sección de
-                        no se que</a>
-                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Seccion 1</a>
+                    <a href="#articulos" class="list-group-item list-group-item-action list-group-item-info">Ir a la sección de Artículos</a>
+                    <a href="#piePagina" class="list-group-item list-group-item-action list-group-item-info">Ir al pie de página</a>
                     <a href="#" class="list-group-item list-group-item-action list-group-item-info">Seccion 1</a>
                     <a href="#" class="list-group-item list-group-item-action list-group-item-info">Seccion 1</a>
                     <a href="#" class="list-group-item list-group-item-action list-group-item-info">Seccion 1</a>
@@ -89,39 +89,45 @@
         </div>
         <div class="row mt-2 p-0">
             <div class="row">
+                <div class="col-12">
+                    <i class="fa-brands fa-sass icono-movible"></i>
+                    <i class="fa-brands fa-html5 icono-movible1"></i>
+                </div>
+            </div>
+            <div class="row">
                 <div id="articulos" class="ms-4 col-12 d-flex justify-content-center">
                     <h2>Artículos</h2>
                 </div>
             </div>
             <hr>
-            <div class="row  p-0">
+            <div class="row p-0">
                 <div class="col-3 d-flex justify-content-center">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://www.lisdatasolutions.com/wp-content/uploads/2022/04/Que-es-y-para-que-sirve-GitHub.jpg" class="card-img-top"
-                            alt="...">
+                    <div class="card shadow border-0 hover-shadow" style="width: 18rem;">
+                        <img src="https://www.lisdatasolutions.com/wp-content/uploads/2022/04/Que-es-y-para-que-sirve-GitHub.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Mi GitHub</h5>
-                            <p class="card-text text-justify">Si pinchas en el siguiente enlace podrás ver mi perfil de GitHub, en el podrás ver
-                                mis proyectos realizados.</p>
-                            <a href="https://github.com/JoseDiB" class="btn btn-primary">Ir a mi Git Hub</a>
+                            <p class="card-text text-justify">
+                                Si pinchas en el siguiente enlace podrás ver mi perfil de GitHub, en el podrás ver mis proyectos realizados.
+                            </p>
+                            <a href="https://github.com/JoseDiB" class="btn btn-primary">Ir a mi GitHub</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-3 d-flex justify-content-center">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Supermoon_Nov-14-2016-minneapolis.jpg"
+                    <div class="card hover-shadow shadow border-0" style="width: 18rem;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png"
                             class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Proyectos Personales</h5>
+                            <p class="card-text">Si pinchas en el siguiente enlace puedes entrar en mi sitio web, donde tengo alojado
+                                los proyectos actuales de JS.
+                            </p>
+                            <a href="https://ieslamarisma.net/proyectos/2025/josediaz/" class="btn btn-primary">Ir a mis proyectos</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-3 d-flex justify-content-center">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card hover-shadow shadow border-0" style="width: 18rem;">
                         <img src="https://cdn3.pixelcut.app/7/20/uncrop_hero_bdf08a8ca6.jpg" class="card-img-top"
                             alt="...">
                         <div class="card-body">
@@ -134,7 +140,7 @@
                     </div>
                 </div>
                 <div class="col-3 d-flex justify-content-center">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card hover-shadow shadow border-0" style="width: 18rem;">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Supermoon_Nov-14-2016-minneapolis.jpg"
                             class="card-img-top" alt="...">
                         <div class="card-body">
@@ -149,7 +155,7 @@
             </div>
         </div>
     </main>
-    <footer class="bg-light mt-2">
+    <footer id="piePagina" class="bg-light mt-2">
         <div class="row p-2">
             <div class="col-4 d-flex justify-content-center">
                 <ul class="d-flex flex-column">
