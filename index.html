@@ -29,6 +29,15 @@
             </div>
         </header>
         <div class="row">
+            <nav class="p-4"
+                style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row">
             <div class="col-9">
                 <div id="carouselExampleCaptions" class="carousel slide p-4">
                     <div class="carousel-indicators">
@@ -79,8 +88,10 @@
             </div>
             <aside class="rounded bg-light col-3 d-flex justify-content-center mt-4">
                 <div class="list-group mt-2 w-100">
-                    <a href="#articulos" class="list-group-item list-group-item-action list-group-item-info">Ir a la sección de Artículos</a>
-                    <a href="#piePagina" class="list-group-item list-group-item-action list-group-item-info">Ir al pie de página</a>
+                    <a href="#articulos" class="list-group-item list-group-item-action list-group-item-info">Ir a la
+                        sección de Artículos</a>
+                    <a href="#piePagina" class="list-group-item list-group-item-action list-group-item-info">Ir al pie
+                        de página</a>
                     <a href="#" class="list-group-item list-group-item-action list-group-item-info">Seccion 1</a>
                     <a href="#" class="list-group-item list-group-item-action list-group-item-info">Seccion 1</a>
                     <a href="#" class="list-group-item list-group-item-action list-group-item-info">Seccion 1</a>
@@ -92,6 +103,7 @@
                 <div class="col-12">
                     <i class="fa-brands fa-sass icono-movible"></i>
                     <i class="fa-brands fa-html5 icono-movible1"></i>
+                    <i class="fa-brands fa-css3 icono-movible2"></i>
                 </div>
             </div>
             <div class="row">
@@ -103,11 +115,13 @@
             <div class="row p-0">
                 <div class="col-3 d-flex justify-content-center">
                     <div class="card shadow border-0 hover-shadow" style="width: 18rem;">
-                        <img src="https://www.lisdatasolutions.com/wp-content/uploads/2022/04/Que-es-y-para-que-sirve-GitHub.jpg" class="card-img-top" alt="...">
+                        <img src="https://www.lisdatasolutions.com/wp-content/uploads/2022/04/Que-es-y-para-que-sirve-GitHub.jpg"
+                            class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Mi GitHub</h5>
                             <p class="card-text text-justify">
-                                Si pinchas en el siguiente enlace podrás ver mi perfil de GitHub, en el podrás ver mis proyectos realizados.
+                                Si pinchas en el siguiente enlace podrás ver mi perfil de GitHub, en el podrás ver mis
+                                proyectos realizados.
                             </p>
                             <a href="https://github.com/JoseDiB" class="btn btn-primary">Ir a mi GitHub</a>
                         </div>
@@ -119,10 +133,12 @@
                             class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Proyectos Personales</h5>
-                            <p class="card-text">Si pinchas en el siguiente enlace puedes entrar en mi sitio web, donde tengo alojado
+                            <p class="card-text">Si pinchas en el siguiente enlace puedes entrar en mi sitio web, donde
+                                tengo alojado
                                 los proyectos actuales de JS.
                             </p>
-                            <a href="https://ieslamarisma.net/proyectos/2025/josediaz/" class="btn btn-primary">Ir a mis proyectos</a>
+                            <a href="https://ieslamarisma.net/proyectos/2025/josediaz/" class="btn btn-primary">Ir a mis
+                                proyectos</a>
                         </div>
                     </div>
                 </div>
@@ -131,11 +147,24 @@
                         <img src="https://cdn3.pixelcut.app/7/20/uncrop_hero_bdf08a8ca6.jpg" class="card-img-top"
                             alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Página 2</h5>
+                            <p class="card-text">Que es lo que hago?</p>
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseWidthExample" aria-expanded="false"
+                                    aria-controls="collapseWidthExample">
+                                    Mostrar más contenido
+                                </button>
+                            </p>
+                            <div class="mb-2" style="max-height: 80px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                    <div class="card card-body" style="width: 200px;">
+                                        Desarrollo aplicaciones web.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="pag2.html" class="btn btn-primary">Ir a pagina 2</a>
                         </div>
                     </div>
                 </div>
@@ -186,7 +215,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 d-flex justify-content-center"><p>&copy; 2025 Mi portafolio</p></div>
+            <div class="col-12 d-flex justify-content-center">
+                <p>&copy; 2025 Mi portafolio</p>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
