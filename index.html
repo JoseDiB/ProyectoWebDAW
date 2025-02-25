@@ -5,41 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto DAW José Díaz Bourre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Macondo&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Wallpoet&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
-<body class="container-fluid p-0 bg-body-secondary">
-    <main class="">
-        <header class="rounded bg-light">
-            <div class="row">
-                <div class="col-12">
-                    <ul class="p-2 ms-2 nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Menú</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pag2.html">Pagina 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pagina 2</a>
-                        </li>
-                    </ul>
+<body class="container-fluid colorBeige fs-4 p-0 text-justify macondo-regular">
+    <main>
+        <header class="rounded row">
+            <nav class="navbar navbar-expand-lg navbar-light colorGrisOscuro">
+                <div class="container-fluid ">
+                    <a class="navbar-brand fs-1 text-white p-2" href="#">Mi Sitio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menuPrincipal">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" href="index.html">Menú</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="pag2.html">Pagina 1</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </nav>
         </header>
         <div class="row">
             <nav class="p-4"
                 style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a class="text-secondary fs-3" href="index.html">Inicio</a></li>
                 </ol>
             </nav>
         </div>
         <div class="row">
-            <div class="col-9">
-                <div id="carouselExampleCaptions" class="carousel slide p-4">
+            <div class="col-md-9 col-sm-12">
+                <div id="carouselExampleCaptions" class="carousel slide p-2">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -86,107 +94,98 @@
                     </button>
                 </div>
             </div>
-            <aside class="rounded bg-light col-3 d-flex justify-content-center mt-4">
-                <div class="list-group mt-2 w-100">
-                    <a href="#articulos" class="list-group-item list-group-item-action list-group-item-info">Ir a la
+            <aside class="rounded colorBeige col-3 d-none d-md-flex justify-content-center mt-1">
+                <div class="list-group mt-2 w-100 ">
+                    <a href="#articulos" class="list-group-item list-group-item-action bg-secondary text-white">Ir a la
                         sección de Artículos</a>
-                    <a href="#piePagina" class="list-group-item list-group-item-action list-group-item-info">Ir al pie
+                    <a href="#piePagina" class="list-group-item list-group-item-action bg-secondary text-white">Ir al
+                        pie
                         de página</a>
-                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Seccion 1</a>
-                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Seccion 1</a>
-                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Seccion 1</a>
                 </div>
             </aside>
         </div>
-        <div class="row mt-2 p-0">
-            <div class="row">
-                <div class="col-12">
-                    <i class="fa-brands fa-sass icono-movible"></i>
-                    <i class="fa-brands fa-html5 icono-movible1"></i>
-                    <i class="fa-brands fa-css3 icono-movible2"></i>
-                </div>
+        <div class="row p-2">
+            <div class="col-12">
+                <i class="fa-brands fa-sass icono-movible"></i>
+                <i class="fa-brands fa-html5 icono-movible1"></i>
+                <i class="fa-brands fa-css3 icono-movible2"></i>
             </div>
-            <div class="row">
-                <div id="articulos" class="ms-4 col-12 d-flex justify-content-center">
-                    <h2>Artículos</h2>
-                </div>
+            <div id="articulos" class="col-12 d-flex justify-content-center">
+                <h2 class="fs-1">Artículos</h2>
             </div>
             <hr>
-            <div class="row p-0">
-                <div class="col-3 d-flex justify-content-center">
-                    <div class="card shadow border-0 hover-shadow" style="width: 18rem;">
-                        <img src="https://www.lisdatasolutions.com/wp-content/uploads/2022/04/Que-es-y-para-que-sirve-GitHub.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Mi GitHub</h5>
-                            <p class="card-text text-justify">
-                                Si pinchas en el siguiente enlace podrás ver mi perfil de GitHub, en el podrás ver mis
-                                proyectos realizados.
-                            </p>
-                            <a href="https://github.com/JoseDiB" class="btn btn-primary">Ir a mi GitHub</a>
-                        </div>
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="card shadow border-0 hover-shadow">
+                    <img src="https://www.lisdatasolutions.com/wp-content/uploads/2022/04/Que-es-y-para-que-sirve-GitHub.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mi GitHub</h5>
+                        <p class="card-text text-justify">
+                            Si pinchas en el siguiente enlace podrás ver mi perfil de GitHub, en el podrás ver mis
+                            proyectos realizados.
+                        </p>
+                        <a href="https://github.com/JoseDiB" class="btn btn-primary">Ir a mi GitHub</a>
                     </div>
                 </div>
-                <div class="col-3 d-flex justify-content-center">
-                    <div class="card hover-shadow shadow border-0" style="width: 18rem;">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyectos Personales</h5>
-                            <p class="card-text">Si pinchas en el siguiente enlace puedes entrar en mi sitio web, donde
-                                tengo alojado
-                                los proyectos actuales de JS.
-                            </p>
-                            <a href="https://ieslamarisma.net/proyectos/2025/josediaz/" class="btn btn-primary">Ir a mis
-                                proyectos</a>
-                        </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="card hover-shadow shadow border-0">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyectos Personales</h5>
+                        <p class="card-text">Si pinchas en el siguiente enlace puedes entrar en mi sitio web, donde
+                            tengo alojado
+                            los proyectos actuales de JS.
+                        </p>
+                        <a href="https://ieslamarisma.net/proyectos/2025/josediaz/" class="btn btn-primary">Ir a mis
+                            proyectos</a>
                     </div>
                 </div>
-                <div class="col-3 d-flex justify-content-center">
-                    <div class="card hover-shadow shadow border-0" style="width: 18rem;">
-                        <img src="https://cdn3.pixelcut.app/7/20/uncrop_hero_bdf08a8ca6.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Página 2</h5>
-                            <p class="card-text">Que es lo que hago?</p>
-                            <p>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseWidthExample" aria-expanded="false"
-                                    aria-controls="collapseWidthExample">
-                                    Mostrar más contenido
-                                </button>
-                            </p>
-                            <div class="mb-2" style="max-height: 80px;">
-                                <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                                    <div class="card card-body" style="width: 200px;">
-                                        Desarrollo aplicaciones web.
-                                    </div>
+            </div>
+            <div class="col-md-6 col-lg-3  d-flex justify-content-center">
+                <div class="card hover-shadow shadow border-0">
+                    <img src="https://cdn3.pixelcut.app/7/20/uncrop_hero_bdf08a8ca6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Página 2</h5>
+                        <p class="card-text">Que es lo que hago?</p>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseWidthExample" aria-expanded="false"
+                                aria-controls="collapseWidthExample">
+                                Mostrar más contenido
+                            </button>
+                        </p>
+                        <div class="mb-2" style="max-height: 80px;">
+                            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                <div class="card card-body" style="width: 200px;">
+                                    Desarrollo aplicaciones web.
                                 </div>
                             </div>
-
-                            <a href="pag2.html" class="btn btn-primary">Ir a pagina 2</a>
                         </div>
+
+                        <a href="pag2.html" class="btn btn-primary">Ir a pagina 2</a>
                     </div>
                 </div>
-                <div class="col-3 d-flex justify-content-center">
-                    <div class="card hover-shadow shadow border-0" style="width: 18rem;">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Supermoon_Nov-14-2016-minneapolis.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex justify-content-center ">
+                <div class="card hover-shadow shadow border-0 ">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Supermoon_Nov-14-2016-minneapolis.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer id="piePagina" class="bg-light mt-2">
+    <footer id="piePagina" class="bg-secondary text-white mt-4">
         <div class="row p-2">
-            <div class="col-4 d-flex justify-content-center">
+            <div class="col-6 col-md-3 col-lg-4  col-xl-5 d-flex justify-content-center">
                 <ul class="d-flex flex-column">
                     <il class="text-decoration-underline">Enlace 1</il>
                     <il class="text-decoration-underline">Enlace 2</il>
@@ -195,7 +194,21 @@
                     <il class="text-decoration-underline">Enlace 5</il>
                 </ul>
             </div>
-            <div class="col-4 d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center flex-wrap align-items-center">
+                <button class="btn bg-info w-25 h-sm-100">
+                    <i class="bi bi-twitter fs-2"></i>
+                </button>
+                <button class="btn bg-danger w-25 h-sm-100">
+                    <i class="bi bi-instagram fs-2"></i>
+                </button>
+                <button class="btn bg-success w-25 h-sm-100">
+                    <i class="bi bi-whatsapp fs-2"></i>
+                </button>
+                <button class="btn bg-primary w-25 h-sm-100">
+                    <i class="bi bi-facebook fs-2"></i>
+                </button>
+            </div>
+            <div class="col-6 col-md-3 col-lg-4  col-xl-5 d-flex justify-content-center">
                 <ul class="d-flex flex-column">
                     <il class="text-decoration-underline">Enlace 1</il>
                     <il class="text-decoration-underline">Enlace 2</il>
@@ -204,15 +217,7 @@
                     <il class="text-decoration-underline">Enlace 5</il>
                 </ul>
             </div>
-            <div class="col-4 d-flex justify-content-center">
-                <ul class="d-flex flex-column">
-                    <il class="text-decoration-underline">Enlace 1</il>
-                    <il class="text-decoration-underline">Enlace 2</il>
-                    <il class="text-decoration-underline">Enlace 3</il>
-                    <il class="text-decoration-underline">Enlace 4</il>
-                    <il class="text-decoration-underline">Enlace 5</il>
-                </ul>
-            </div>
+
         </div>
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
